@@ -139,18 +139,12 @@ frontend/index.html
 * Continuous repository monitoring
 * Cloud deployment
 
-## Project Author
-
-**Monisha Mohan**
-
-Artificial Intelligence and Data Science
-
 ## Project Status
 
 **Functional prototype** with ML prediction, SHAP explainability, FastAPI backend, GitHub repository analysis, and responsive frontend.
 
 ## License
 
-This project is developed for academic and educational purposes.
+This project is developed for educational purposes.
 
 
