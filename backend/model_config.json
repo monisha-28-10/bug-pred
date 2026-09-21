@@ -1,0 +1,21 @@
+{
+    "classification_threshold": 0.45,
+    "risk_levels": {
+        "LOW": [
+            0.0,
+            0.3
+        ],
+        "MEDIUM": [
+            0.3,
+            0.6
+        ],
+        "HIGH": [
+            0.6,
+            0.8
+        ],
+        "CRITICAL": [
+            0.8,
+            1.0
+        ]
+    }
+}

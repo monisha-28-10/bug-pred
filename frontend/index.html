@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Software Bug Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Software Bug Prediction</h1>
+            <p>ML-Based Bug Risk Analysis System</p>
+        </header>
+
+
+        <!-- INPUT SECTION -->
+
+        <section class="card">
+
+                <div class="github-section">
+                    <h2>GitHub Repository Analysis</h2>
+                    <p>
+                        Enter a public GitHub repository URL to analyze its source code
+                        and identify potential bug risks.
+                    </p>
+                    <div class="github-input-group">
+                        <div class="github-input-wrapper">
+                            <input
+                                type="url"
+                                id="githubUrl"
+                                placeholder="https://github.com/username/repository">
+
+                            <small class="github-input-hint">
+                                Enter a public GitHub repository URL.
+                            </small>
+                        </div>
+
+                        <button
+                            type="button"
+                            id="githubBtn"
+                            onclick="analyzeGithub()">
+                            Analyze Repository
+                        </button>
+                    </div>
+                    <div id="githubStatus"></div>
+                    <div id="githubResults" class="github-results"></div>
+                </div>
+
+            <button
+                id="resetBtn"
+                type="button"
+                onclick="location.reload()">
+                Clear
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

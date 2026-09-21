@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 25px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* ============================================
+   RISK LEVEL STYLING
+   ============================================ */
+
+.risk-low {
+    color: #2e7d32;
+}
+
+.risk-medium {
+    color: #f57c00;
+}
+
+.risk-high {
+    color: #d84315;
+}
+
+.risk-critical {
+    color: #c62828;
+    font-weight: 800;
+}
+
+#resetBtn {
+    width: 220px;
+    margin: 10px auto 0;
+    padding: 14px 30px;
+    background: #f5f5f5;
+    color: #222;
+    border: 1px solid #ccc;
+}
+
+.github-section {
+    margin-top: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.github-section h2 {
+    margin-top: 0;
+}
+
+.github-input-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.github-input-group input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.github-input-group input:focus {
+    outline: none;
+    border-color: #222;
+}
+
+.github-input-group button {
+    width: 200px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 0;
+    background: #222;
+    color: white;
+    font-weight: 600;
+}
+
+.github-input-group button:hover {
+    opacity: 0.85;
+}
+
+#githubStatus {
+    margin-top: 15px;
+}
+
+.github-results {
+    margin-top: 20px;
+}
+
+.github-results h3 {
+    margin-bottom: 15px;
+}
+
+.github-risk-card {
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+.github-risk-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.github-risk-info span {
+    font-size: 15px;
+}
+
+.github-details {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.github-details h4 {
+    margin-bottom: 12px;
+}
+
+.github-factor {
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.github-factor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 14px;
+}
+
+.github-factor-header strong {
+    font-size: 17px;
+}
+
+.github-factor-header span {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.github-factor p {
+    margin: 9px 0;
+    line-height: 1.55;
+}
+
+.github-overall-recommendation {
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.github-overall-recommendation h4 {
+    margin-bottom: 10px;
+}
+
+.github-overall-recommendation p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.github-remaining {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.github-remaining strong {
+    font-weight: 700;
+}
+
+.github-file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.highest-risk {
+    border: 2px solid #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.highest-risk-badge {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.github-summary {
+    margin-bottom: 25px;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
+
+.github-summary h3 {
+    margin-bottom: 18px;
+}
+
+.github-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.github-summary-grid div {
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.github-summary-grid span {
+    display: block;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.github-summary-grid strong {
+    display: block;
+    font-size: 17px;
+    word-break: break-word;
+}
+
+
+/* ============================================
+   GITHUB RISK LEVEL COLORS
+   ============================================ */
+
+.github-risk-card .github-risk-info strong {
+    font-weight: 700;
+}
+
+#githubStatus {
+    margin-top: 10px;
+    padding: 0;
+    background: transparent;
+    color: #444;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.github-input-group button:disabled {
+    transform: none;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#githubStatus.analyzing {
+    background: #fff3cd;
+    color: #856404;
+}
+
+#githubStatus.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+#githubStatus.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.github-input-wrapper {
+    flex: 1;
+}
+
+.github-input-wrapper input {
+    width: 100%;
+}
+
+.github-input-hint {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .github-summary-grid {
+        grid-template-columns: 1fr;
+    }
+    .github-input-group {
+        flex-direction: column;
+    }
+
+    .github-input-group input,
+    .github-input-group button {
+        width: 100%;
+    }
+
+    .github-input-wrapper {
+        width: 100%;
+    }
+
+    .github-input-hint {
+        margin-bottom: 5px;
+    }
+    #resetBtn {
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
+#resetBtn:hover {
+    background: #e9e9e9;
+    opacity: 1;
+}
+
+.github-input-group button:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.github-input-group button {
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}

@@ -1,0 +1,25 @@
+{
+    "model": "Logistic Regression",
+    "selected_features": [
+        "loc",
+        "v(g)",
+        "ev(g)",
+        "iv(g)",
+        "l",
+        "d",
+        "i",
+        "t",
+        "lOComment",
+        "lOBlank",
+        "locCodeAndComment",
+        "uniq_Op"
+    ],
+    "classification_threshold": 0.45,
+    "risk_levels": {
+        "LOW": "0.00 - <0.30",
+        "MEDIUM": "0.30 - <0.60",
+        "HIGH": "0.60 - <0.80",
+        "CRITICAL": "0.80 - 1.00"
+    },
+    "selected_feature_count": 12
+}
