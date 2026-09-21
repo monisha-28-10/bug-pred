@@ -35,7 +35,7 @@ async function analyzeGithub() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/analyze-github",
+            "https://bug-pred-api.onrender.com/analyze-github",
             {
                 method: "POST",
                 headers: {
